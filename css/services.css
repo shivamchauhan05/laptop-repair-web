@@ -1,0 +1,68 @@
+/* Services landing page styles */
+
+.services-grid{
+    max-width:1100px;
+    margin:40px auto 20px;
+    padding:0 8%;
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:18px;
+}
+
+.service-card{
+    text-decoration:none;
+    color:inherit;
+    background:#ffffff;
+    border:1px solid rgba(15, 23, 42, 0.08);
+    border-radius:12px;
+    padding:18px 16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.04);
+    transition:transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.service-card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(37, 99, 235, 0.35);
+    box-shadow:0 16px 35px rgba(0,0,0,0.08);
+}
+
+.service-card h2{
+    font-size:18px;
+    margin-bottom:10px;
+    color:#0f172a;
+}
+
+.service-card p{
+    color:#475569;
+    line-height:1.6;
+    font-size:14px;
+    margin:0;
+}
+
+.cta{
+    max-width:1100px;
+    margin:10px auto 60px;
+    padding:0 8%;
+    text-align:center;
+}
+
+.cta h3{
+    font-size:20px;
+    margin-bottom:8px;
+    color:#0f172a;
+}
+
+.cta p{
+    color:#475569;
+    line-height:1.6;
+    margin:0 0 14px;
+}
+
+@media (max-width: 1000px){
+    .services-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}
+}
+
+@media (max-width: 650px){
+    .services-grid{grid-template-columns:1fr;}
+}
+

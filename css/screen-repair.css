@@ -1,0 +1,92 @@
+/* Screen repair page styles */
+
+.hero {
+    /* keep existing structure; only add safe defaults */
+    padding-bottom: 10px;
+}
+
+.hero-highlights{
+    max-width:1100px;
+    margin:14px auto 0;
+    padding:0 8%;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.highlight{
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    color:#0f172a;
+    padding:10px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.screen-gallery{
+    max-width: 1100px;
+    margin: 28px auto 10px;
+    padding: 0 8%;
+}
+
+.screen-gallery h2{
+    color:#0f172a;
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.gallery-item{
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+.gallery-media{
+    position:relative;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display:block;
+}
+
+.gallery-badge{
+    position:absolute;
+    top:12px;
+    left:12px;
+    background: rgba(37, 99, 235, 0.95);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    padding:6px 10px;
+    border-radius:999px;
+    box-shadow:0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+.gallery-caption{
+    padding: 12px 12px;
+    color:#475569;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px){
+    .gallery-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px){
+    .gallery-grid{ grid-template-columns: 1fr; }
+    .gallery-item img{ height: 220px; }
+}
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - LaptopFix</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <style>
+        /* Fallback styles in case css/about.css is empty */
+        .page{
+            padding:30px 8%;
+        }
+        .hero{
+            background:#fff;
+            border-radius:12px;
+            padding:28px;
+            box-shadow:0 8px 24px rgba(0,0,0,0.06);
+            margin-bottom:24px;
+        }
+        .hero h1{ color:#0f172a; margin-bottom:10px; }
+        .hero p{ color:#334155; line-height:1.7; font-size:16px; }
+
+        .content{
+            background:#fff;
+            border-radius:12px;
+            padding:28px;
+            box-shadow:0 8px 24px rgba(0,0,0,0.06);
+            margin-bottom:24px;
+        }
+        .content h2{ color:#0f172a; margin:0 0 12px; }
+        .content p{ color:#334155; line-height:1.7; margin-bottom:16px; }
+        .content ul, .content ol{ margin-left:20px; color:#334155; line-height:1.7; margin-bottom:18px; }
+
+        .features{
+            display:grid;
+            grid-template-columns:repeat(3, minmax(0, 1fr));
+            gap:16px;
+            margin-top:14px;
+        }
+        .feature{
+            border:1px solid rgba(15,23,42,0.08);
+            border-radius:12px;
+            padding:16px;
+            background:#fff;
+        }
+        .feature h3{ color:#0f172a; margin-bottom:8px; font-size:16px; }
+        .feature p{ margin:0; color:#475569; line-height:1.6; font-size:14px; }
+
+        .cta{
+            text-align:center;
+            background:#eff6ff;
+            border-radius:12px;
+            padding:22px;
+            margin-top:18px;
+        }
+        .cta h3{ color:#0f172a; margin-bottom:8px; }
+        .cta p{ color:#334155; margin-bottom:14px; }
+
+        @media (max-width: 900px){
+            .features{ grid-template-columns:1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>LaptopFix</h2>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Services ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services/laptop-screen-repair.html">Laptop Screen Repair</a></li>
+                        <li><a href="services/battery-replacement.html">Battery Replacement</a></li>
+                        <li><a href="services/motherboard-repair.html">Motherboard Repair</a></li>
+                        <li><a href="services/keyboard-repair.html">Keyboard Repair</a></li>
+                        <li><a href="services/data-recovery.html">Data Recovery</a></li>
+                        <li><a href="services/ram-ssd-upgrade.html">RAM &amp; SSD Upgrade</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="contact.html" class="btn">Book Repair</a>
+    </header>
+
+    <main class="page">
+        <section class="hero">
+            <h1>About LaptopFix</h1>
+            <p>
+                LaptopFix is a repair team built around one goal: get your laptop working reliably again.
+                We provide fast diagnostics and careful repairs for common issues—so you can return to work with confidence.
+            </p>
+        </section>
+
+        <section class="content">
+            <h2>Why customers choose us</h2>
+            <p>
+                We combine practical troubleshooting with clear communication, so you know what’s wrong and what will be done.
+            </p>
+
+            <div class="features" aria-label="LaptopFix benefits">
+                <div class="feature">
+                    <h3>Expert diagnostics</h3>
+                    <p>We identify the root cause—not just the symptom—before recommending a fix.</p>
+                </div>
+                <div class="feature">
+                    <h3>Quality parts</h3>
+                    <p>Compatible replacement components chosen for performance and long-term reliability.</p>
+                </div>
+                <div class="feature">
+                    <h3>Clear pricing</h3>
+                    <p>You’ll receive a quote after diagnosis—no surprise charges.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>Our repair process</h2>
+            <ol>
+                <li><strong>Receive &amp; inspect</strong> — we check the laptop and identify visible concerns.</li>
+                <li><strong>Test &amp; diagnose</strong> — diagnostics confirm the real cause.</li>
+                <li><strong>Quote &amp; confirm</strong> — you get a clear recommendation and next steps.</li>
+                <li><strong>Repair &amp; verify</strong> — we complete the work and thoroughly test the system.</li>
+                <li><strong>Return &amp; support</strong> — we ensure everything is working as expected.</li>
+            </ol>
+
+            <div class="cta">
+                <h3>Need help with a laptop issue?</h3>
+                <p>Send your model and symptoms, and we’ll guide you to the right service.</p>
+                <a class="btn" href="contact.html">Get a Quote</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
