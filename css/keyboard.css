@@ -1,0 +1,177 @@
+/* Keyboard repair page */
+.page{
+  padding: 30px 8%;
+}
+
+.hero{
+  background:#fff;
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+  margin-bottom:24px;
+}
+
+.hero h1{
+  color:#0f172a;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:#334155;
+  line-height:1.6;
+  font-size:16px;
+}
+
+.content{
+  background:#fff;
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+}
+
+.content h2{
+  color:#0f172a;
+  margin: 18px 0 10px;
+}
+
+.content ul,
+.content ol{
+  margin-left: 20px;
+  margin-bottom: 18px;
+  color:#334155;
+  line-height:1.7;
+}
+
+.cta{
+  margin-top: 10px;
+  padding:18px;
+  background:#eff6ff;
+  border-radius:10px;
+}
+
+.cta h3{
+  color:#0f172a;
+  margin-bottom:8px;
+}
+
+.cta p{
+  color:#334155;
+  margin-bottom:14px;
+}
+
+/* Reuse .btn from home.css but ensure spacing */
+.cta .btn{
+  display:inline-block;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.8;
+
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0; 
+}
+
+/* header hero section */
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 60px 20px;
+  background-color: #18233c;
+  border-radius: 10px;
+  color: white; 
+
+
+}
+
+ header h1{
+    font-size: 40px;
+} 
+
+header p{
+    font-size: 18px;
+    margin-bottom: 25px;
+
+} 
+/* content */
+
+.hero-content{
+    width: 50%;
+
+}
+
+/* button */
+.hero-content .btn{
+    text-decoration: none;
+    color:#18233c;
+    background-color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    
+   
+}
+
+/* image */
+
+.hero-img{
+    width: 45%;
+
+}
+.hero-img img{
+    width: 100%;
+}
+
+/* sections */
+
+section{
+    background-color:white;
+    margin-top:25px;
+    
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+
+
+ 
+}
+
+ h2{
+    color:#18233c ;
+    
+}
+
+h3{
+    margin-top: 25px;
+    color: #304981;
+}
+
+ul {
+   margin-left: 25px;
+}
+
+/* contact part */
+
+.contact{
+    text-align: center;
+    background:#96a7ce;
+   
+   
+    
+}

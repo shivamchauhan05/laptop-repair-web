@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motherboard Repair - LaptopFix</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/motherboard.css">
+</head>
+<body>
+
+  <div id="header"></div>
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Motherboard Repair That Brings Life Back to Your Laptop</h1>
+          <p>Precision diagnostics, component-level micro-soldering, and fast turnaround for power failures, no-boot issues, liquid damage, overheating, and connectivity faults.</p>
+          <div class="hero-buttons">
+            <a href="../contact.html" class="btn-primary" id="scheduleBtn"><i class="fas fa-calendar-check"></i> Schedule Repair</a>
+            <a href="#workflow" class="btn-secondary" id="learnMoreBtn"><i class="fas fa-play-circle"></i> How it works</a>
+          </div>
+          <div class="hero-stats" style="margin-top: 26px; display:flex; gap:22px; flex-wrap:wrap;">
+            <div class="stat" style="background:#fff; border:1px solid #e2e8f0; padding:14px 16px; border-radius:18px;">
+              <div style="font-weight:800; font-size:1.6rem; color:#0f172a;">5000+</div>
+              <div style="color:#475569; font-weight:600;">Repairs done</div>
+            </div>
+            <div class="stat" style="background:#fff; border:1px solid #e2e8f0; padding:14px 16px; border-radius:18px;">
+              <div style="font-weight:800; font-size:1.6rem; color:#0f172a;">98%</div>
+              <div style="color:#475569; font-weight:600;">Success rate</div>
+            </div>
+            <div class="stat" style="background:#fff; border:1px solid #e2e8f0; padding:14px 16px; border-radius:18px;">
+              <div style="font-weight:800; font-size:1.6rem; color:#0f172a;">24h</div>
+              <div style="color:#475569; font-weight:600;">Express service</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img">
+          <i class="fas fa-microchip" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common issues -->
+    <section>
+      <h2 class="section-title">Frequent Motherboard Failures</h2>
+      <p class="section-sub">We diagnose and resolve complex hardware faults with advanced tools and certified technicians.</p>
+
+      <div class="card-grid">
+        <div class="service-card">
+          <i class="fas fa-bolt" aria-hidden="true"></i>
+          <h3>No Power / Dead Board</h3>
+          <p>Power IC failure, MOSFET shorts, DC jack issues — full circuit repair.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-desktop" aria-hidden="true"></i>
+          <h3>No Display / Black Screen</h3>
+          <p>GPU chip, RAM slot, display controller rework, reballing & component replacement.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-temperature-high" aria-hidden="true"></i>
+          <h3>Overheating & Shutdowns</h3>
+          <p>VRM phase repair, capacitor leakage fix, thermal management & stability tuning.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-water" aria-hidden="true"></i>
+          <h3>Liquid Damage</h3>
+          <p>Ultrasonic cleaning, trace repair, corrosion removal & component swap.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-usb" aria-hidden="true"></i>
+          <h3>Ports / Connectivity Failure</h3>
+          <p>USB-C, HDMI, audio jack, Ethernet controller re-soldering & diagnostics.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-code" aria-hidden="true"></i>
+          <h3>BIOS / EFI Corruption</h3>
+          <p>SPI reprogramming, BIOS recovery & safe flashing procedures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow -->
+    <section id="workflow" style="padding-top: 0;">
+      <h2 class="section-title">Our Repair Workflow</h2>
+      <p class="section-sub">Transparent, methodical, and backed by warranty.</p>
+
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Free Diagnostic</h3>
+          <p>Multi-meter & thermal scan to locate the exact fault.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Quote & Approval</h3>
+          <p>Detailed report, fixed price, no hidden fees.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Micro-soldering</h3>
+          <p>BGA rework, chip replacement, and trace repairs.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Strict Testing</h3>
+          <p>24h stress test, I/O verification, thermal imaging.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <h3>Warranty</h3>
+          <p>6-month warranty on all component-level repairs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section>
+      <h2 class="section-title">Why Choose LaptopFix</h2>
+      <p class="section-sub">Certified engineers, genuine parts, and careful testing before return.</p>
+
+      <div class="card-grid">
+        <div class="why-card service-card">
+          <i class="fas fa-certificate" aria-hidden="true"></i>
+          <h3>Certified Engineers</h3>
+          <p>IPC-certified technicians with 8+ years of experience.</p>
+        </div>
+        <div class="why-card service-card">
+          <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+          <h3>Same-Day Service (Most Cases)</h3>
+          <p>Most repairs completed within 24–48 hours; rush option available.</p>
+        </div>
+        <div class="why-card service-card">
+          <i class="fas fa-chart-line" aria-hidden="true"></i>
+          <h3>Advanced Equipment</h3>
+          <p>Oscilloscopes, BGA rework station, thermal camera for accurate results.</p>
+        </div>
+        <div class="why-card service-card">
+          <i class="fas fa-shield-alt" aria-hidden="true"></i>
+          <h3>Genuine Parts</h3>
+          <p>Direct sourced ICs, MOSFETs, and capacitors with quality checks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section>
+      <h2 class="section-title">Transparent Pricing</h2>
+      <p class="section-sub">Pay only for what’s needed — diagnostic fee waived with repair.</p>
+
+      <div class="pricing-grid" style="display:flex; flex-wrap:wrap; gap:24px; justify-content:center;">
+        <div class="price-card service-card" style="max-width:360px;">
+          <h3>Diagnostic Only</h3>
+          <div class="price" style="font-size:2.2rem; font-weight:800; color:#0f172a; margin:14px 0;">$39</div>
+          <p>Full board analysis + report<br>Credit toward final repair</p>
+          <div style="margin-top:16px;">
+            <a class="btn-secondary" href="../contact.html" style="display:inline-flex;">Book Now</a>
+          </div>
+        </div>
+
+        <div class="price-card service-card" style="max-width:360px; border-top:5px solid #2563eb; border-color:#bfdbfe; transform: translateY(-2px);">
+          <h3>Standard Repair</h3>
+          <div class="price" style="font-size:2.2rem; font-weight:800; color:#0f172a; margin:14px 0;">$149</div>
+          <p>Power / display / USB / minor soldering. Includes 3-month warranty.</p>
+          <div style="margin-top:16px;">
+            <a class="btn-primary" href="../contact.html" style="width:100%; justify-content:center; display:inline-flex;">Select Plan</a>
+          </div>
+        </div>
+
+        <div class="price-card service-card" style="max-width:360px;">
+          <h3>Advanced Logic</h3>
+          <div class="price" style="font-size:2.2rem; font-weight:800; color:#0f172a; margin:14px 0;">$229</div>
+          <p>GPU/CPU reball, chipset replacement, liquid damage complex trace repair. 6-month warranty.</p>
+          <div style="margin-top:16px;">
+            <a class="btn-secondary" href="../contact.html" style="display:inline-flex;">Get Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+      <h2 class="section-title">Real Feedback</h2>
+      <p class="section-sub">Trusted by hundreds of professionals and students.</p>
+
+      <div class="testimonial-grid">
+        <div class="testimonial"><i class="fas fa-quote-left" style="color:#f97316; font-size: 1.8rem; opacity:0.7;"></i><p style="margin: 15px 0;">“LaptopFix revived my liquid-damaged MacBook motherboard — works like new. Clear communication and fast service!”</p><h4>— Priya M.</h4></div>
+        <div class="testimonial"><i class="fas fa-quote-left" style="color:#f97316; font-size: 1.8rem; opacity:0.7;"></i><p style="margin: 15px 0;">“Had a dead motherboard (no power). They diagnosed a shorted capacitor and fixed it within 2 days. Amazing!”</p><h4>— Rohan S.</h4></div>
+        <div class="testimonial"><i class="fas fa-quote-left" style="color:#f97316; font-size: 1.8rem; opacity:0.7;"></i><p style="margin: 15px 0;">“Fair pricing for GPU reballing, motherboard now works perfectly after overheating issues. Highly recommended.”</p><h4>— Anjali K.</h4></div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item active"><div class="faq-question">How long does motherboard repair take? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Standard repairs take 2–3 days. Express service available (24h) for an additional fee. Complex board repairs may take up to 5 days.</div></div>
+        <div class="faq-item"><div class="faq-question">Do you offer warranty on motherboard repairs? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Yes, we provide 6 months warranty on all soldering and component-level repairs. Free rework if same issue recurs.</div></div>
+        <div class="faq-item"><div class="faq-question">Can you recover data from a dead motherboard? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Usually yes — we first repair power delivery to retrieve data. If the SSD/HDD is functional, data remains intact.</div></div>
+        <div class="faq-item"><div class="faq-question">Do you repair all laptop brands? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Absolutely. Dell, HP, Lenovo, Acer, ASUS, Apple MacBook, MSI, and more. We have donor boards and safe procedures for major brands.</div></div>
+      </div>
+    </section>
+
+    <!-- Contact / Quote Form -->
+    <section style="padding-top: 0;">
+      <div class="contact-form">
+        <h3 style="font-size: 1.8rem; margin-bottom: 12px;">Request a Free Consultation</h3>
+        <p>Describe your laptop issue, and we’ll get back within 2 hours.</p>
+        <form id="quoteForm">
+          <div class="form-group"><input type="text" placeholder="Full name" required id="nameInput"></div>
+          <div class="form-group"><input type="email" placeholder="Email address" required id="emailInput"></div>
+          <div class="form-group"><input type="tel" placeholder="Phone number (optional)" id="phoneInput"></div>
+          <div class="form-group"><textarea rows="3" placeholder="Describe motherboard issue (no power, liquid spill, no display, etc.)" required id="issueDesc"></textarea></div>
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;"><i class="fas fa-paper-plane"></i> Submit Request</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+  <script>
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+  <script>
+    // FAQ accordion logic
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const questionDiv = item.querySelector('.faq-question');
+      questionDiv.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if(!isActive) item.classList.add('active');
+      });
+    });
+
+    // smooth scroll for "How it works" btn
+    const learnBtn = document.getElementById('learnMoreBtn');
+    if(learnBtn) {
+      learnBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const processSection = document.querySelector('#workflow');
+        if(processSection) processSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    // Schedule repair button scroll to form
+    const scheduleBtn = document.getElementById('scheduleBtn');
+    if(scheduleBtn) {
+      scheduleBtn.addEventListener('click', () => {
+        const formSection = document.querySelector('#quoteForm')?.closest('section');
+        if(formSection) formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    // Form submission simulation
+    const form = document.getElementById('quoteForm');
+    if(form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('nameInput')?.value;
+        const issue = document.getElementById('issueDesc')?.value;
+        if(name && issue) {
+          alert(`Thank you ${name}! Our motherboard repair expert will contact you within 2 hours.`);
+          form.reset();
+        } else {
+          alert("Please fill all required fields (name & issue description).");
+        }
+      });
+    }
+  </script>
+</body>
+</html>

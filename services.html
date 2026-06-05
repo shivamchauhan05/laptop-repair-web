@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Complete Laptop Repair Services | LaptopFix</title>
+    <!-- Primary Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/services.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional custom styles for full service details */
+        .services-overview {
+            background: #ffffff;
+            padding: 5rem 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .service-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .service-card-full {
+            background: #fefefe;
+            border-radius: 28px;
+            box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s;
+            border: 1px solid #eef2ff;
+        }
+        .service-card-full:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 36px -16px rgba(0, 0, 0, 0.12);
+        }
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-content {
+            padding: 1.5rem;
+        }
+        .service-content h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .service-desc {
+            color: #334155;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .service-features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        .service-features li {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+        .price-badge {
+            background: #eef2ff;
+            padding: 0.25rem 1rem;
+            border-radius: 40px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            color: #2563eb;
+        }
+        .btn-sm {
+            margin-top: 1rem;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.85rem;
+            background: #2563eb;
+        }
+        .process-compact {
+            background: #f8fafc;
+            padding: 4rem 0;
+        }
+        .compact-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .step-compact {
+            text-align: center;
+            flex: 1;
+            min-width: 160px;
+        }
+        .step-icon {
+            font-size: 2rem;
+            background: white;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+        }
+        @media (max-width: 768px) {
+            .service-cards-grid { gap: 1.2rem; }
+            .section-title { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header"></div>
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+
+    <main>
+        <!-- Hero Section - All laptop services -->
+        <section class="repair-hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Complete Laptop Repair Services in Gurugaon</h1>
+                    <p class="hero-subtitle">One Stop Solution for All Laptop Problems</p>
+                    <p class="hero-description">From cracked screens to dead motherboards, liquid damage to slow performance — our expert technicians fix every laptop issue with genuine parts and same-day service options. 12+ months warranty on all repairs.</p>
+                    <div class="hero-stats">
+                        <span>✅ Free diagnostic</span>
+                        <span>⚡ 1-2 hour express service</span>
+                        <span>🔧 Certified engineers</span>
+                        <span>🏆 98% success rate</span>
+                    </div>
+                    <a href="../contact.html" class="btn btn-large">Get Free Quote →</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&auto=format" alt="Laptop repair expert" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- All Services in Detail (6 core services) -->
+        <section class="services-overview">
+            <div class="container">
+                <h2 class="section-title">🔧 Every Laptop Service You Need</h2>
+                <div class="service-cards-grid">
+                    <!-- 1. Screen Repair -->
+                    <div class="service-card-full">
+                        <img class="service-img" src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&auto=format" alt="Screen repair">
+                        <div class="service-content">
+                            <h3>🖥️ Laptop Screen Repair</h3>
+                            <p class="service-desc">Cracked, flickering, black screen, dead pixels – we replace with OEM-grade LCD/LED displays. All sizes and resolutions (HD, 4K, touch).</p>
+                            <ul class="service-features">
+                                <li>✅ Same‑day replacement</li>
+                                <li>✅ Glossy / Matte / Touch panels</li>
+                                <li>✅ 180‑day warranty</li>
+                            </ul>
+                            <span class="price-badge">From $79</span>
+                            <a href="../contact.html" class="btn btn-sm">Get Quote</a>
+                        </div>
+                    </div>
+                    <!-- 2. Battery Replacement -->
+                    <div class="service-card-full">
+                        <img class="service-img" src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&auto=format" alt="Battery replacement">
+                        <div class="service-content">
+                            <h3>🔋 Battery Replacement</h3>
+                            <p class="service-desc">Laptop not holding charge, sudden shutdowns, swollen battery? Genuine batteries with 1 year warranty.</p>
+                            <ul class="service-features">
+                                <li>✅ Fast charging certified</li>
+                                <li>✅ Swollen battery replacement</li>
+                                <li>✅ Calibration included</li>
+                            </ul>
+                            <span class="price-badge">From $69</span>
+                            <a href="../contact.html" class="btn btn-sm">Get Quote</a>
+                        </div>
+                    </div>
+                    <!-- 3. Motherboard Repair -->
+                    <div class="service-card-full">
+                        <img class="service-img" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&auto=format" alt="Motherboard repair">
+                        <div class="service-content">
+                            <h3>⚙️ Motherboard Repair</h3>
+                            <p class="service-desc">No power, boot failure, liquid damage, overheating – chip-level repair with advanced tools.</p>
+                            <ul class="service-features">
+                                <li>✅ Component-level fixing</li>
+                                <li>✅ BIOS / IC replacement</li>
+                                <li>✅ 90 days warranty</li>
+                            </ul>
+                            <span class="price-badge">From $129</span>
+                            <a href="../contact.html" class="btn btn-sm">Get Quote</a>
+                        </div>
+                    </div>
+                    <!-- 4. Keyboard Repair -->
+                    <div class="service-card-full">
+                        <img class="service-img" src="https://images.unsplash.com/photo-1587614296131-7a4c5a1e9e3d?w=600&auto=format" alt="Keyboard repair">
+                        <div class="service-content">
+                            <h3>⌨️ Keyboard Repair</h3>
+                            <p class="service-desc">Sticky, broken keys, spill damage, backlight issues – key replacement or full keyboard swap.</p>
+                            <ul class="service-features">
+                                <li>✅ Single key or full replacement</li>
+                                <li>✅ Backlight restoration</li>
+                                <li>✅ Membrane & mechanical</li>
+                            </ul>
+                            <span class="price-badge">From $49</span>
+                            <a href="../contact.html" class="btn btn-sm">Get Quote</a>
+                        </div>
+                    </div>
+                    <!-- 5. Data Recovery -->
+                    <div class="service-card-full">
+                        <img class="service-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format" alt="Data recovery">
+                        <div class="service-content">
+                            <h3>💾 Data Recovery</h3>
+                            <p class="service-desc">Accidental deletion, formatted drive, corrupted partition, failed HDD/SSD – recover photos, docs, videos.</p>
+                            <ul class="service-features">
+                                <li>✅ Logical & physical recovery</li>
+                                <li>✅ No fix‑no fee option</li>
+                                <li>✅ Secure & confidential</li>
+                            </ul>
+                            <span class="price-badge">From $99</span>
+                            <a href="../contact.html" class="btn btn-sm">Get Quote</a>
+                        </div>
+                    </div>
+                    <!-- 6. RAM / SSD Upgrade -->
+                    <div class="service-card-full">
+                        <img class="service-img" src="https://images.unsplash.com/photo-1593642634314-48f541b3d0b6?w=600&auto=format" alt="RAM SSD Upgrade">
+                        <div class="service-content">
+                            <h3>🚀 RAM & SSD Upgrade</h3>
+                            <p class="service-desc">Boost speed, increase storage – install additional RAM, replace HDD with SSD, or NVMe upgrade.</p>
+                            <ul class="service-features">
+                                <li>✅ 8GB/16GB/32GB upgrades</li>
+                                <li>✅ Clone OS without data loss</li>
+                                <li>✅ Lifetime warranty on parts*</li>
+                            </ul>
+                            <span class="price-badge">From $59 + parts</span>
+                            <a href="../contact.html" class="btn btn-sm">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick 4‑Step Repair Process (for all services) -->
+        <section class="process-compact">
+            <div class="container">
+                <h2 class="section-title">📋 Our Service Process (All Repairs)</h2>
+                <div class="compact-steps">
+                    <div class="step-compact">
+                        <div class="step-icon">1️⃣</div>
+                        <h3>Bring / Ship</h3>
+                        <p>Drop off or free pickup*</p>
+                    </div>
+                    <div class="step-compact">
+                        <div class="step-icon">2️⃣</div>
+                        <h3>Free Diagnosis</h3>
+                        <p>We find the exact issue</p>
+                    </div>
+                    <div class="step-compact">
+                        <div class="step-icon">3️⃣</div>
+                        <h3>Repair / Replace</h3>
+                        <p>Using quality parts</p>
+                    </div>
+                    <div class="step-compact">
+                        <div class="step-icon">4️⃣</div>
+                        <h3>Quality Test</h3>
+                        <p>Fully functional return</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us + Benefits (combined) -->
+        <section class="why-benefits">
+            <div class="container two-col-layout">
+                <div class="why-card">
+                    <h2>✅ Why Choose LaptopFix?</h2>
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=500&auto=format" alt="Trusted service">
+                    <ul class="tick-list">
+                        <li>✔ 10+ years of repair experience</li>
+                        <li>✔ 12 months warranty on all repairs</li>
+                        <li>✔ Free diagnostic with repair</li>
+                        <li>✔ Transparent pricing – no hidden fees</li>
+                        <li>✔ 100% customer satisfaction</li>
+                    </ul>
+                </div>
+                <div class="benefits-card">
+                    <h2>🎯 Benefits of Professional Repair</h2>
+                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=500&auto=format" alt="Benefits">
+                    <ul class="tick-list">
+                        <li>✨ Extend laptop life by 2-3 years</li>
+                        <li>💰 Save 70% vs buying new</li>
+                        <li>⚡ Restore performance & reliability</li>
+                        <li>📈 Increase resale value</li>
+                        <li>🌱 Eco-friendly – reduce e‑waste</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands We Service (extended) -->
+        <section class="brands-section">
+            <div class="container">
+                <h2>🏷️ All Laptop Brands We Service</h2>
+                <div class="brands-grid">
+                    <div class="brand-card"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=180&auto=format" alt="HP"><h3>HP</h3><p>Pavilion, EliteBook, Spectre</p></div>
+                    <div class="brand-card"><img src="https://images.unsplash.com/photo-1593642702909-dec73df255d7?w=180&auto=format" alt="Dell"><h3>Dell</h3><p>XPS, Inspiron, Latitude</p></div>
+                    <div class="brand-card"><img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=180&auto=format" alt="Lenovo"><h3>Lenovo</h3><p>ThinkPad, Yoga, Legion</p></div>
+                    <div class="brand-card"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=180&auto=format" alt="ASUS"><h3>ASUS</h3><p>ROG, ZenBook, TUF</p></div>
+                    <div class="brand-card"><img src="https://images.unsplash.com/photo-1593642702821-c9da9e0f87c6?w=180&auto=format" alt="Acer"><h3>Acer</h3><p>Predator, Swift, Aspire</p></div>
+                    <div class="brand-card"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=180&auto=format" alt="Apple"><h3>Apple MacBook</h3><p>Air & Pro models</p></div>
+                    <div class="brand-card"><img src="https://images.unsplash.com/photo-1593642702909-dec73df255d7?w=180&auto=format" alt="Microsoft"><h3>Microsoft Surface</h3><p>Laptop & Pro</p></div>
+                    <div class="brand-card"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=180&auto=format" alt="Samsung"><h3>Samsung</h3><p>Galaxy Book, Odyssey</p></div>
+                </div>
+                <p class="brand-note">* We also repair LG, Huawei, Xiaomi, Razer, and many more – just ask!</p>
+            </div>
+        </section>
+
+        <!-- Expanded FAQ with service-specific answers -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>❓ Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How long does each repair take?</h3>
+                        <p>Screen & battery: 2-4 hours. Keyboard & RAM/SSD: 1-2 hours. Motherboard & data recovery: 1-3 days (depends on complexity). Express options available.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer warranty on repairs?</h3>
+                        <p>Yes! 12 months on all parts and labor. For data recovery, we guarantee the recovered data or no charge.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I get a free estimate?</h3>
+                        <p>Absolutely. Bring your laptop or describe the issue online – we provide a free diagnostic and quote before any work begins.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is my data safe during repair?</h3>
+                        <p>100% privacy guaranteed. We never access personal files unless you request data recovery. For any storage repair, we sign a confidentiality agreement.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you use genuine parts?</h3>
+                        <p>Yes – OEM or premium equivalent parts only. No cheap knock-offs. All screens, batteries, and keyboards are quality tested.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What if the laptop can't be fixed?</h3>
+                        <p>We’ll honestly tell you. No diagnostic fee if we cannot repair. You only pay if you proceed with repair.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Contact CTA -->
+        <section class="contact-cta">
+            <div class="cta-wrapper">
+                <div class="cta-content">
+                    <h2>📞 Need Laptop Repair? Contact Us Now</h2>
+                    <p>Whether it's a cracked screen, dead battery, motherboard failure, or any laptop issue – our experts are ready to help. Free pickup & delivery in selected cities.</p>
+                    <div class="contact-buttons">
+                        <a href="../contact.html" class="btn btn-cta">Schedule Repair →</a>
+                        <a href="tel:+1234567890" class="btn btn-secondary">Call (555) 789-0123</a>
+                    </div>
+                    <p class="small-note">* Same-day service available for most repairs. Walk-ins welcome.</p>
+                </div>
+                <div class="cta-image">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&auto=format" alt="Customer support">
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <div id="footer"></div>
+        <script>
+            fetch("footer.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+        </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battery Replacement - LaptopFix</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/battery.css">
+</head>
+<body>
+  <div id="header"></div>
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Battery Replacement</h1>
+      <p>Fast laptop battery replacements using quality batteries and expert installation to restore battery life and stability.</p>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script>
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
