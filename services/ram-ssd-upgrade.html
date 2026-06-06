@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RAM & SSD Upgrade - LaptopFix</title>
+  <title>RAM & SSD Upgrade Services in Gurgaon | LaptopFix</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/ram-ssd.css">
+  <style>
+    /* minimal fallback */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fafcff; }
+  </style>
 </head>
 <body>
   <div id="header"></div>
@@ -15,13 +21,158 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("header").innerHTML = data;
-      });
+      })
+      .catch(() => console.log("header.html not found"));
   </script>
 
-  <main class="container">
-    <section class="hero">
-      <h1>RAM & SSD Upgrade</h1>
-      <p>Boost your laptop with extra RAM and a faster SSD for smoother performance, improved boot times, and better multitasking.</p>
+  <main>
+    <!-- Hero Section -->
+    <section class="ram-hero">
+      <div class="container">
+        <div class="hero-icon"><i class="fas fa-microchip"></i><i class="fas fa-memory"></i></div>
+        <h1>RAM & SSD Upgrade Services in Gurgaon</h1>
+        <p class="hero-subtitle">Boost Your Laptop's Performance with Professional Upgrades</p>
+        <p class="hero-description">At LaptopFix, we help customers improve their laptop's speed, storage capacity, and overall performance through professional RAM and SSD upgrade services. If your laptop takes a long time to start, struggles with multitasking, or frequently slows down during daily tasks, upgrading your RAM or SSD can provide a noticeable improvement. Our experienced technicians ensure every upgrade is performed safely and professionally for maximum performance and reliability.</p>
+      </div>
+    </section>
+
+    <!-- Who Can Benefit Section -->
+    <section class="who-benefit">
+      <div class="container">
+        <div class="benefit-grid">
+          <div class="benefit-text">
+            <h2><i class="fas fa-users"></i> Who Can Benefit from a RAM & SSD Upgrade?</h2>
+            <p>RAM and SSD upgrades are ideal for students, professionals, gamers, business users, content creators, and anyone using an older laptop. Whether you need faster boot times, smoother multitasking, improved gaming performance, or additional storage space, upgrading your laptop can significantly enhance your computing experience without the cost of buying a new device.</p>
+            <div class="benefit-tags">
+              <span><i class="fas fa-graduation-cap"></i> Students</span>
+              <span><i class="fas fa-briefcase"></i> Professionals</span>
+              <span><i class="fas fa-gamepad"></i> Gamers</span>
+              <span><i class="fas fa-chart-line"></i> Business Users</span>
+              <span><i class="fas fa-palette"></i> Content Creators</span>
+            </div>
+          </div>
+          <div class="benefit-image">
+            <img src="https://images.unsplash.com/photo-1581092335871-4c3bf2eb6b0e?w=500&auto=format" alt="Laptop performance upgrade">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RAM Upgrade Services Section -->
+    <section class="ram-services">
+      <div class="container">
+        <div class="services-wrapper">
+          <div class="services-icon-header">
+            <i class="fas fa-microchip"></i>
+            <h2>Our RAM Upgrade Services</h2>
+          </div>
+          <div class="services-content">
+            <p>RAM plays an important role in your laptop's ability to run multiple applications efficiently. If your laptop freezes, lags, or becomes slow while multitasking, a RAM upgrade can help improve responsiveness and performance. We provide compatible RAM upgrade solutions for various laptop models and ensure every installation is tested for stability and reliability.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> DDR3, DDR4 & DDR5 RAM Upgrades</li>
+              <li><i class="fas fa-check-circle"></i> Capacity upgrades from 4GB to 32GB+</li>
+              <li><i class="fas fa-check-circle"></i> Compatibility verification before installation</li>
+              <li><i class="fas fa-check-circle"></i> Stress testing for stability assurance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SSD Upgrade Services Section -->
+    <section class="ssd-services">
+      <div class="container">
+        <div class="services-wrapper alt">
+          <div class="services-icon-header">
+            <i class="fas fa-solid-state-drive"></i>
+            <h2>Our SSD Upgrade Services</h2>
+          </div>
+          <div class="services-content">
+            <p>Replacing a traditional hard drive with a Solid State Drive (SSD) is one of the most effective ways to improve laptop speed. SSDs offer faster boot times, quicker file access, and improved system responsiveness. Our SSD upgrade services include professional installation, compatibility checks, and optional data migration to help customers enjoy a seamless upgrade experience.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> SATA SSD & NVMe M.2 SSD Upgrades</li>
+              <li><i class="fas fa-check-circle"></i> 256GB, 512GB, 1TB, 2TB options</li>
+              <li><i class="fas fa-check-circle"></i> OS & data migration service</li>
+              <li><i class="fas fa-check-circle"></i> Clone existing drive to new SSD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Upgrade Instead of Replace -->
+    <section class="why-upgrade">
+      <div class="container">
+        <div class="upgrade-card">
+          <i class="fas fa-exchange-alt"></i>
+          <h2>Why Upgrade Your Laptop Instead of Replacing It?</h2>
+          <p>Upgrading RAM and SSD components is often a cost-effective alternative to purchasing a new laptop. These upgrades can significantly improve performance, extend the lifespan of your device, and provide a smoother user experience. Many older laptops can achieve near-new performance levels with the right upgrades, making them a smart investment for users looking to maximize value.</p>
+          <div class="stats-row">
+            <div class="stat"><span class="stat-number">70%</span><span>Faster Boot Times with SSD</span></div>
+            <div class="stat"><span class="stat-number">2x</span><span>Multitasking Performance</span></div>
+            <div class="stat"><span class="stat-number">₹15k-50k</span><span>Save vs New Laptop</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose LaptopFix Section -->
+    <section class="why-choose">
+      <div class="container">
+        <h2><i class="fas fa-star-of-life"></i> Why Choose LaptopFix for RAM & SSD Upgrades?</h2>
+        <div class="features-grid">
+          <div class="feature"><i class="fas fa-user-cog"></i><h3>Experienced Technicians</h3><p>Our technicians have extensive experience upgrading laptops from all major brands and models.</p></div>
+          <div class="feature"><i class="fas fa-check-double"></i><h3>Compatibility Assurance</h3><p>We carefully verify hardware compatibility before recommending any upgrade.</p></div>
+          <div class="feature"><i class="fas fa-microchip"></i><h3>Quality Components</h3><p>We use reliable RAM modules and high-performance SSDs to ensure long-term performance and stability.</p></div>
+          <div class="feature"><i class="fas fa-clock"></i><h3>Fast Service</h3><p>Most RAM and SSD upgrades can be completed within a few hours.</p></div>
+          <div class="feature"><i class="fas fa-smile"></i><h3>Customer Satisfaction</h3><p>We focus on delivering professional service, transparent pricing, and dependable upgrade solutions.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Laptop Brands We Support -->
+    <section class="brands-support">
+      <div class="container">
+        <h2><i class="fas fa-laptop-code"></i> Laptop Brands We Support</h2>
+        <p class="brands-subtitle">We provide RAM and SSD upgrade services for a wide range of laptop brands, including:</p>
+        <div class="brands-grid">
+          <span class="brand">HP</span><span class="brand">Dell</span><span class="brand">Lenovo</span><span class="brand">Asus</span>
+          <span class="brand">Acer</span><span class="brand">Apple MacBook</span><span class="brand">MSI</span><span class="brand">Samsung</span>
+          <span class="brand">Toshiba</span><span class="brand">Microsoft Surface</span>
+        </div>
+        <p class="brands-note">Our technicians ensure that every upgrade is compatible with your specific laptop model for optimal performance.</p>
+      </div>
+    </section>
+
+    <!-- Serving Gurgaon Section -->
+    <section class="serving-gurgaon">
+      <div class="container">
+        <div class="serving-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Serving Customers Across Gurgaon</h3>
+          <p>LaptopFix proudly provides professional RAM and SSD upgrade services throughout Gurgaon. Whether you need additional memory, faster storage, improved multitasking performance, or a complete laptop performance boost, our experts are ready to help you choose the right upgrade solution.</p>
+          <div class="serving-buttons">
+            <a href="#" class="btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp for Quote</a>
+            <a href="#" class="btn-secondary"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-upgrade">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-headset"></i></div>
+          <h2>Contact Us for a RAM & SSD Upgrade</h2>
+          <p>If your laptop feels slow, takes too long to start, or struggles with everyday tasks, a RAM or SSD upgrade could be the perfect solution. Contact LaptopFix today to discuss your upgrade requirements and discover how we can help improve your laptop's speed, performance, and reliability.</p>
+          <div class="contact-methods">
+            <a href="tel:+91XXXXXXXXX" class="contact-btn call"><i class="fas fa-phone-alt"></i> Call Now</a>
+            <a href="mailto:support@laptopfix.in" class="contact-btn email"><i class="fas fa-envelope"></i> Email Us</a>
+            <a href="#" class="contact-btn visit"><i class="fas fa-store"></i> Visit Center</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -31,7 +182,8 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("footer").innerHTML = data;
-      });
+      })
+      .catch(() => console.log("footer.html not found"));
   </script>
 </body>
 </html>

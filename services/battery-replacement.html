@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Battery Replacement - LaptopFix</title>
+  <title>Battery Replacement Services in Gurgaon | LaptopFix</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/battery.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fafcff; }
+  </style>
 </head>
 <body>
   <div id="header"></div>
@@ -15,13 +20,160 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("header").innerHTML = data;
-      });
+      })
+      .catch(() => console.log("header.html not found"));
   </script>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Battery Replacement</h1>
-      <p>Fast laptop battery replacements using quality batteries and expert installation to restore battery life and stability.</p>
+  <main>
+    <!-- Hero Section -->
+    <section class="battery-hero">
+      <div class="container">
+        <div class="hero-icon">
+          <i class="fas fa-battery-full"></i>
+          <i class="fas fa-charging-station"></i>
+        </div>
+        <h1>Battery Replacement Services in Gurgaon</h1>
+        <p class="hero-subtitle">Professional Laptop Battery Replacement Services</p>
+        <p class="hero-description">A healthy battery is essential for smooth and uninterrupted laptop performance. If your laptop battery drains quickly, takes too long to charge, or fails to hold a charge, it may be time for a replacement. At <strong>LaptopFix</strong>, we provide professional laptop battery replacement services in Gurgaon for all major laptop brands. Our technicians carefully diagnose battery-related issues and provide reliable solutions to restore your laptop's portability and performance.</p>
+      </div>
+    </section>
+
+    <!-- Why Battery Replacement Is Important -->
+    <section class="why-important">
+      <div class="container">
+        <div class="importance-grid">
+          <div class="importance-text">
+            <h2><i class="fas fa-question-circle"></i> Why Laptop Battery Replacement Is Important</h2>
+            <p>Over time, laptop batteries naturally lose their ability to hold a charge. This can result in shorter battery life, unexpected shutdowns, overheating, and reduced productivity. Replacing a worn-out battery helps improve device reliability, extends usage time, and ensures your laptop performs efficiently throughout the day.</p>
+            <div class="importance-stats">
+              <div class="stat-item"><i class="fas fa-chart-line"></i> <span>2-3 years</span> average battery lifespan</div>
+              <div class="stat-item"><i class="fas fa-temperature-high"></i> <span>Overheating</span> indicates battery failure</div>
+              <div class="stat-item"><i class="fas fa-hourglass-half"></i> <span>80% capacity</span> after 500 cycles</div>
+            </div>
+          </div>
+          <div class="importance-image">
+            <img src="https://images.unsplash.com/photo-1581092335871-4c3bf2eb6b0e?w=500&auto=format" alt="Laptop battery replacement">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signs Your Laptop Needs a New Battery -->
+    <section class="signs-section">
+      <div class="container">
+        <h2><i class="fas fa-exclamation-triangle"></i> Signs Your Laptop Needs a New Battery</h2>
+        <p class="section-subtitle">Several warning signs may indicate that your laptop battery requires replacement</p>
+        <div class="signs-grid">
+          <div class="sign-card"><i class="fas fa-tachometer-alt"></i><h3>Rapid Battery Drain</h3><p>Battery percentage drops quickly even with light usage.</p></div>
+          <div class="sign-card"><i class="fas fa-plug"></i><h3>Difficulty Charging</h3><p>Laptop doesn't charge or takes unusually long to charge.</p></div>
+          <div class="sign-card"><i class="fas fa-power-off"></i><h3>Unexpected Power Loss</h3><p>Laptop shuts down suddenly even showing remaining charge.</p></div>
+          <div class="sign-card"><i class="fas fa-expand-alt"></i><h3>Battery Swelling</h3><p>Visible bulging on laptop chassis or touchpad becomes hard to press.</p></div>
+          <div class="sign-card"><i class="fas fa-thermometer-half"></i><h3>Overheating</h3><p>Bottom of laptop becomes unusually hot during charging.</p></div>
+          <div class="sign-card"><i class="fas fa-shield-alt"></i><h3>Battery Health Warnings</h3><p>System shows "replace battery" or "battery not detected".</p></div>
+        </div>
+        <p class="signs-note">If you notice any of these issues, our technicians can inspect your laptop and recommend the most suitable solution.</p>
+      </div>
+    </section>
+
+    <!-- Battery Replacement for All Brands -->
+    <section class="brands-support">
+      <div class="container">
+        <div class="brands-card">
+          <i class="fas fa-laptop-code"></i>
+          <h2>Battery Replacement for All Laptop Brands</h2>
+          <p>We provide battery replacement services for a wide range of laptop brands, including HP, Dell, Lenovo, Asus, Acer, Apple MacBook, MSI, Samsung, and more. Our team ensures compatibility and proper installation to help maintain your laptop's performance and reliability.</p>
+          <div class="brands-grid">
+            <span class="brand">HP</span><span class="brand">Dell</span><span class="brand">Lenovo</span><span class="brand">Asus</span>
+            <span class="brand">Acer</span><span class="brand">Apple MacBook</span><span class="brand">MSI</span><span class="brand">Samsung</span>
+            <span class="brand">Toshiba</span><span class="brand">Microsoft Surface</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Genuine & High-Quality Batteries -->
+    <section class="quality-batteries">
+      <div class="container">
+        <div class="quality-grid">
+          <div class="quality-image">
+            <img src="https://images.unsplash.com/photo-1581092335871-4c3bf2eb6b0e?w=500&auto=format" alt="Genuine laptop battery">
+          </div>
+          <div class="quality-text">
+            <h2><i class="fas fa-check-circle"></i> Genuine and High-Quality Replacement Batteries</h2>
+            <p>Choosing the right battery is important for safety and long-term performance. We use high-quality replacement batteries that meet manufacturer standards and provide reliable power backup. Every battery replacement is carefully tested to ensure proper charging, battery health, and overall system stability.</p>
+            <ul>
+              <li><i class="fas fa-shield-alt"></i> OEM-grade compatible batteries</li>
+              <li><i class="fas fa-clock"></i> 6 months warranty on replacement batteries</li>
+              <li><i class="fas fa-flask"></i> Safety tested for overheating protection</li>
+              <li><i class="fas fa-charging-station"></i> Fast charging support where applicable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fast and Affordable Solutions -->
+    <section class="affordable-solutions">
+      <div class="container">
+        <div class="solutions-card">
+          <i class="fas fa-rocket"></i>
+          <h2>Fast and Affordable Battery Replacement Solutions</h2>
+          <p>A failing battery should not disrupt your work or daily activities. We offer fast and affordable battery replacement services designed to get your laptop back in working condition as quickly as possible. Our transparent pricing and professional service make battery replacement simple and hassle-free.</p>
+          <div class="solutions-features">
+            <div class="feature-item"><i class="fas fa-clock"></i> 1-2 hour turnaround</div>
+            <div class="feature-item"><i class="fas fa-rupee-sign"></i> Competitive pricing</div>
+            <div class="feature-item"><i class="fas fa-receipt"></i> No hidden charges</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose LaptopFix -->
+    <section class="why-choose">
+      <div class="container">
+        <h2><i class="fas fa-star-of-life"></i> Why Choose LaptopFix for Battery Replacement?</h2>
+        <div class="features-grid">
+          <div class="feature"><i class="fas fa-user-cog"></i><h3>Experienced Technicians</h3><p>Our technicians have extensive experience replacing batteries in various laptop models and brands.</p></div>
+          <div class="feature"><i class="fas fa-microchip"></i><h3>Quality Replacement Parts</h3><p>We use dependable batteries that deliver reliable performance and long-lasting power.</p></div>
+          <div class="feature"><i class="fas fa-clock"></i><h3>Quick Turnaround Time</h3><p>Most battery replacement services can be completed within a short period, minimizing downtime.</p></div>
+          <div class="feature"><i class="fas fa-tag"></i><h3>Transparent Pricing</h3><p>We provide clear pricing with no hidden charges or unnecessary repairs.</p></div>
+          <div class="feature"><i class="fas fa-smile"></i><h3>Customer Satisfaction</h3><p>We focus on delivering professional service and reliable solutions tailored to your needs.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serving Gurgaon Section -->
+    <section class="serving-gurgaon">
+      <div class="container">
+        <div class="serving-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Serving Customers Across Gurgaon</h3>
+          <p>LaptopFix proudly provides laptop battery replacement services throughout Gurgaon. Whether your battery no longer holds a charge, causes unexpected shutdowns, or shows signs of damage, our team is ready to help with professional replacement solutions.</p>
+          <div class="serving-buttons">
+            <a href="#" class="btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp for Quote</a>
+            <a href="#" class="btn-secondary"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-battery">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-battery-quarter"></i>
+            <i class="fas fa-tools"></i>
+          </div>
+          <h2>Contact Us for Laptop Battery Replacement</h2>
+          <p>If your laptop battery is affecting performance or limiting productivity, don't wait for the problem to get worse. Contact LaptopFix today for professional battery replacement services in Gurgaon and enjoy improved battery life, better reliability, and uninterrupted laptop usage.</p>
+          <div class="contact-methods">
+            <a href="tel:+91XXXXXXXXX" class="contact-btn call"><i class="fas fa-phone-alt"></i> Call Now</a>
+            <a href="mailto:support@laptopfix.in" class="contact-btn email"><i class="fas fa-envelope"></i> Email Us</a>
+            <a href="#" class="contact-btn visit"><i class="fas fa-store"></i> Visit Center</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -31,7 +183,8 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("footer").innerHTML = data;
-      });
+      })
+      .catch(() => console.log("footer.html not found"));
   </script>
 </body>
 </html>

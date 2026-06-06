@@ -3,10 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - LaptopFix</title>
+  <title>About Us - LaptopFix | Trusted Laptop Repair Partner in Delhi & Gurgaon</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- common.css (if exists, else fallback) -->
   <link rel="stylesheet" href="css/common.css">
+  <!-- main about stylesheet -->
   <link rel="stylesheet" href="css/about.css">
+  <style>
+    /* fallback base styles in case common.css missing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #fafcff;
+      color: #1a2c3e;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+  </style>
 </head>
 <body>
   <div id="header"></div>
@@ -15,13 +36,139 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("header").innerHTML = data;
-      });
+      })
+      .catch(() => console.log("header.html not found — using inline fallback if needed"));
   </script>
 
-  <main class="container">
-    <section class="hero">
-      <h1>About LaptopFix</h1>
-      <p>We are your local experts for laptop repair services in Delhi and Gurgaon. Our team is dedicated to fast diagnostics, honest pricing, and reliable repairs for every major laptop brand.</p>
+  <main>
+    <!-- Hero section with about introduction (consistent with existing page structure but enriched) -->
+    <section class="about-hero">
+      <div class="container">
+        <div class="hero-content-center">
+          <h1>About LaptopFix</h1>
+          <p class="hero-tagline">Your Trusted Laptop Repair Partner — Serving Delhi & Gurgaon with Expert Care</p>
+          <p class="hero-description">At LaptopFix, we are dedicated to providing reliable, affordable, and professional laptop repair services for individuals, students, professionals, and businesses. Our goal is simple — to help customers get their laptops back to peak performance with fast turnaround times, transparent pricing, and high-quality repairs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Are section (complete content) -->
+    <section class="who-we-are">
+      <div class="container">
+        <div class="section-grid two-column">
+          <div class="info-text">
+            <h2>Who We Are</h2>
+            <p><strong>LaptopFix</strong> is a customer-focused laptop repair service provider specializing in complete laptop repair and maintenance solutions. We understand how important laptops have become in everyday life, and we work hard to ensure every customer receives prompt and professional support.</p>
+            <p>Our technicians are trained to repair laptops from <strong>all major brands</strong>, including HP, Dell, Lenovo, Asus, Acer, Apple MacBook, MSI, Samsung, and many others. We use quality replacement parts and advanced diagnostic tools to ensure accurate repairs and long-lasting performance.</p>
+            <div class="years-badge">⭐ 8+ years of combined experience ⭐</div>
+          </div>
+          <div class="info-media">
+            <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&auto=format" alt="Laptop repair technician at work">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="our-mission">
+      <div class="container">
+        <div class="mission-wrapper">
+          <div class="mission-icon"><i class="fas fa-bullseye"></i></div>
+          <h2>Our Mission</h2>
+          <p>Our mission is to provide dependable laptop repair services that combine quality, affordability, and customer satisfaction. We believe every customer deserves honest recommendations, transparent pricing, and repair solutions that extend the life of their devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Offer - Comprehensive list of services -->
+    <section class="what-we-offer">
+      <div class="container">
+        <h2>What We Offer</h2>
+        <p class="section-subtitle">We provide a wide range of laptop repair services, including:</p>
+        <div class="services-grid">
+          <div class="service-item"><i class="fas fa-desktop"></i> Laptop Screen Repair and Replacement</div>
+          <div class="service-item"><i class="fas fa-microchip"></i> Motherboard Repair Services</div>
+          <div class="service-item"><i class="fas fa-battery-full"></i> Battery Replacement</div>
+          <div class="service-item"><i class="fas fa-keyboard"></i> Keyboard Repair and Replacement</div>
+          <div class="service-item"><i class="fas fa-database"></i> Data Recovery Solutions</div>
+          <div class="service-item"><i class="fas fa-memory"></i> RAM and SSD Upgrades</div>
+          <div class="service-item"><i class="fas fa-plug"></i> Charging Port Repair</div>
+          <div class="service-item"><i class="fas fa-cogs"></i> Hinge Repair Services</div>
+          <div class="service-item"><i class="fas fa-code"></i> Software Troubleshooting</div>
+          <div class="service-item"><i class="fas fa-shield-alt"></i> Virus and Malware Removal</div>
+          <div class="service-item"><i class="fas fa-tachometer-alt"></i> Laptop Performance Optimization</div>
+          <div class="service-item"><i class="fas fa-tools"></i> Complete Laptop Maintenance</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose LaptopFix : 6 reasons with visuals -->
+    <section class="why-choose">
+      <div class="container">
+        <h2>Why Choose LaptopFix</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-user-cog"></i></div>
+            <h3>Experienced Technicians</h3>
+            <p>Our repair specialists have extensive experience diagnosing and repairing various laptop issues.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-rupee-sign"></i></div>
+            <h3>Affordable Pricing</h3>
+            <p>We offer cost-effective repair solutions with transparent pricing and no hidden charges.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+            <h3>Fast Turnaround Time</h3>
+            <p>Many common laptop repairs can be completed on the same day, helping reduce downtime.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Quality Repairs</h3>
+            <p>We use reliable parts and proven repair techniques to ensure long-lasting results.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-smile"></i></div>
+            <h3>Customer Satisfaction</h3>
+            <p>We focus on delivering excellent service and building long-term trust with our customers.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Serving Delhi & Gurgaon</h3>
+            <p>LaptopFix proudly serves customers across Delhi and Gurgaon with professional laptop repair services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional area: What we cover + expertise -->
+    <section class="service-coverage">
+      <div class="container">
+        <div class="coverage-card">
+          <div class="coverage-text">
+            <h3>Serving Delhi and Gurgaon – Complete Repair Solutions</h3>
+            <p>LaptopFix proudly serves customers across Delhi and Gurgaon with professional laptop repair services. Whether you need hardware repairs, software troubleshooting, upgrades, or maintenance, our team is ready to help restore your laptop's performance quickly and efficiently.</p>
+            <a href="#" class="btn-contact">Get in Touch →</a>
+          </div>
+          <div class="coverage-image">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500&auto=format" alt="Delhi Gurgaon laptop repair service">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in Touch CTA with original message -->
+    <section class="get-in-touch">
+      <div class="container touch-container">
+        <div class="touch-content">
+          <h2>Get in Touch</h2>
+          <p>If your laptop is experiencing any issues, don't wait for the problem to get worse. Contact LaptopFix today for professional laptop repair services, expert guidance, and reliable solutions designed to keep your device running smoothly.</p>
+          <div class="touch-buttons">
+            <a href="#" class="btn-primary"><i class="fas fa-phone-alt"></i> Call Us Now</a>
+            <a href="#" class="btn-secondary"><i class="fas fa-envelope"></i> Email Support</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -31,7 +178,8 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById("footer").innerHTML = data;
-      });
+      })
+      .catch(() => console.log("footer.html not found — static fallback works"));
   </script>
 </body>
 </html>
